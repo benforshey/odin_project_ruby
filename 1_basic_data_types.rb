@@ -1,3 +1,5 @@
+# DOCS: https://launchschool.com/books/ruby/read/basics
+
 # NUMBERS
 # It’s important to keep in mind that when doing arithmetic with two integers in Ruby, the result will always be an integer.
 puts 13.to_f
