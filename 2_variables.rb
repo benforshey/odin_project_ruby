@@ -2,6 +2,7 @@
 # variable scope is defined by a method definition or by a block
 # Be aware that not all do...end pairs imply a block. We will explore this in much greater detail in later courses. In particular, a do...end on a for or while loop is not a block.
 # Put another way, the key distinguishing factor for deciding whether code delimited by {} or do/end is considered a block (and thereby creates a new scope for variables), is seeing if the {} or do/end immediately follows a method invocation. `for` is a Ruby keyword, not a method invocation.
+# This is the major point of this section: some operations mutate the address space, while others simply make the variable point to a different address space.
 
 # VARIABLE DECLARATION
 # like in other languages...much is relatable
