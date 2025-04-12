@@ -8,16 +8,15 @@ puts 13.0.to_i
 puts 6.even?
 puts 6.odd?
 
-
 # STRINGS
 # With the plus operator:
-"Welcome " + "to " + "Odin!"    #=> "Welcome to Odin!"
+"Welcome " + "to " + "Odin!" #=> "Welcome to Odin!"
 
 # With the shovel operator:
-"Welcome " << "to " << "Odin!"  #=> "Welcome to Odin!"
+"Welcome " << "to " << "Odin!" #=> "Welcome to Odin!"
 
 # With the concat method:
-"Welcome ".concat("to ").concat("Odin!")  #=> "Welcome to Odin!"
+"Welcome ".concat("to ").concat("Odin!") #=> "Welcome to Odin!"
 
 # Like other languages, can access via index notation.
 "hello"[0]      #=> "h"
@@ -69,7 +68,7 @@ nil.to_s      #=> ""
 puts :a_symbol
 
 # In Ruby, everything is an object...
-"string" == "string"  #=> true
+"string" == "string" #=> true
 
 "string".object_id == "string".object_id  #=> false
 

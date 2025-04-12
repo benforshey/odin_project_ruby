@@ -1,2 +1,6 @@
+# It's good that RuboCop is so opinionated, but not while I'm doing stupid stuff and learning.
 AllCops:
   DisabledByDefault: true
+
+Layout:
+  Enabled: true

@@ -6,7 +6,7 @@
 room_tidy = false
 if room_tidy == true
   puts "Let's play some Rust!"
-else 
+else
   puts "Let's clean up first!"
 end
 
@@ -38,10 +38,10 @@ end
 puts 5 === 5
 puts 5 == 5
 
-#eql? checks both the value type and the actual value it holds.
+# eql? checks both the value type and the actual value it holds.
 puts 5.eql?(5.0)
 
-#equal? checks whether both values are the exact same object in memory.
+# equal? checks whether both values are the exact same object in memory.
 a = 5
 b = 5
 # works for
@@ -66,7 +66,6 @@ puts 1 <=> 2
 puts 1 <=> 1
 puts 2 <=> 1
 
-
 if 1 < 2 && 5 < 6
   puts "This is happening?! (symbolic)"
 end
@@ -88,6 +87,7 @@ puts user_name
 # which is using the short-circuit evaluation of "or" to die if you can't `cd`
 # A Ruby version of this:
 raise "Whoa, leaving so soon?!" unless line = $stdin.gets # press <C-c> <C-d> to raise
+
 # this would fail because of operator precedence:
 # line = $stdin.gets || raise "Can't read from STDIN"
 # this works, though!
@@ -112,20 +112,20 @@ end
 grade_points = 91
 honor_role_eligible = nil
 letter_grade = case grade_points
-  when 0..59 then "F"
-  when 60..69 then "D"
-  when 70..79 then "C"
-  when 80..89 then "B"
-  when 90..100
-    honor_role_eligible = true
-    "A"
-else 
-  if grade_points < 0
-    "Well, there's always tutoring!"
-  elsif grade_points > 100
-    "That's got to feel good!"
-  end
-end
+               when 0..59 then "F"
+               when 60..69 then "D"
+               when 70..79 then "C"
+               when 80..89 then "B"
+               when 90..100
+                 honor_role_eligible = true
+                 "A"
+               else
+                 if grade_points < 0
+                   "Well, there's always tutoring!"
+                 elsif grade_points > 100
+                   "That's got to feel good!"
+                 end
+               end
 
 puts "A grade of #{letter_grade} #{honor_role_eligible ? 'is' : 'is not'} eligible for the Honor Role."
 
@@ -141,8 +141,8 @@ end
 # condition ? <execute if true> : <execute if false>
 excuses = true
 puts excuses ? "Excuses are the nails that build the house of failure." : "Don't forget to enjoy the moment you're in right now."
- 
-# Type Coercion 
+
+# Type Coercion
 # Just like in JS, stringing together two "not" operators works to coerce types to Boolean.
 x = 5
 y = nil
