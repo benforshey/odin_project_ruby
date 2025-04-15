@@ -1,3 +1,4 @@
+# DOCS: https://launchschool.com/books/ruby/read/arrays
 # ARRAYS
 
 # Like other languages, an array is an ordered list of data.
