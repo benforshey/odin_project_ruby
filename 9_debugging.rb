@@ -7,9 +7,9 @@
 # You get this...the poor man's debugger.
 def isogram?(string)
   original_length = string.length
-  unique_length = hstring.downcase.split('').uniq.length
+  unique_length = string.downcase.split('').uniq.length
 
-  return original_length == unique_length
+  original_length == unique_length
 end
 
 p isogram?("Odin")
