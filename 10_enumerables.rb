@@ -23,6 +23,9 @@ p friends.reject { |friend| friend == 'Brian' }
 # The #each Method
 # `friend` is known as the block variable.
 friends.each { |friend| puts "Hello, #{friend}!" }
+# Does not return, so
+# p friends.each { |friend| "Hello, #{friend}!" }
+# just puts `friends`.
 
 # What if the block you want to pass to a method requires more logic than can fit on one line? It starts to become less readable and looks unwieldy. For multi-line blocks, the commonly accepted best practice is to change up the syntax to use do...end instead of {...}:
 my_array = [1, 2]
